@@ -1,0 +1,24 @@
+# Build directories
+/build/
+/bin/
+/obj/
+/cmake-build-*/
+
+# Compiled binaries and objects
+*.dll
+*.exe
+*.o
+*.obj
+
+# Code::Blocks generated files
+*.depend
+*.layout
+
+# IDE and editor settings
+/.idea/
+/.vscode/
+*.user
+
+# Operating-system files
+.DS_Store
+Thumbs.db
