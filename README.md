@@ -6,6 +6,23 @@ A C++17 and SDL2 application that renders colorful house scenes described in sem
 
 Each house is assembled at runtime from geometric shapes. Its walls, roof, and door use the position, dimensions, angle, and colors defined in the scene file. Windows are added automatically and spaced according to the size of the walls, so changing a house's dimensions also changes its window layout without requiring individual window entries.
 
+## Install and run on Windows
+
+1. Download the ZIP from the [latest release](https://github.com/Bluzaborges/tarsila-houses/releases) and extract all its files into one folder.
+2. Open PowerShell in the extracted folder and run:
+
+```powershell
+.\tarsila-houses.exe
+```
+
+The interactive shell displays a prompt. Type `help` to see the available commands, or enter `examples/houses.txt` to open the included scene. Closing the SDL window returns to the prompt so you can open another scene. Type `exit` to quit.
+
+To open the example directly without entering the interactive shell, run:
+
+```powershell
+.\tarsila-houses.exe examples/houses.txt
+```
+
 ## Requirements
 
 - A C++17-compatible compiler
@@ -38,37 +55,6 @@ cmake --build --preset release
 ```
 
 This creates an optimized executable for normal use. Development builds use the `debug` preset, as described in the editor sections below.
-
-## Run
-
-Start the interactive shell:
-
-```bash
-./build/release/tarsila-houses
-```
-
-The terminal displays:
-
-```text
-Tarsila Houses
-Type help to see the available commands.
-
->
-```
-
-Type `help` to see the commands, or enter a scene path directly:
-
-```text
-> examples/houses.txt
-```
-
-Closing the SDL window returns to the prompt, allowing another scene to be opened. Type `exit` to close the application.
-
-A scene can also be opened without entering interactive mode:
-
-```bash
-./build/release/tarsila-houses examples/houses.txt
-```
 
 ## Scene files
 
