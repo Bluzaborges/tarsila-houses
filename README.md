@@ -124,3 +124,6 @@ If Code::Blocks does not find the debugger automatically, open **Settings > Debu
 ```text
 C:\msys64\ucrt64\bin\gdb.exe
 ```
+## License
+
+This project is licensed under the [MIT License](LICENSE).
